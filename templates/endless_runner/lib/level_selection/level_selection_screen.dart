@@ -32,7 +32,7 @@ class LevelSelectionScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    'Select level',
+                    'Selecione o nivel',
                     style: Theme.of(context).textTheme.headlineSmall,
                   ),
                   const SizedBox(width: 16),
@@ -73,7 +73,7 @@ class LevelSelectionScreen extends StatelessWidget {
                       title: Row(
                         children: [
                           Text(
-                            'Level #${level.number}',
+                            'Nivel #${level.number}',
                             style: levelTextStyle,
                           ),
                           if (playerProgress.levels.length <

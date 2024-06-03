@@ -32,7 +32,7 @@ class _CustomNameDialogState extends State<CustomNameDialog> {
       child: SimpleDialog(
         title: Center(
           child: Text(
-            'Change name',
+            'Mude o nome',
             style: Theme.of(context).textTheme.headlineMedium,
           ),
         ),
@@ -57,7 +57,7 @@ class _CustomNameDialogState extends State<CustomNameDialog> {
           TextButton(
             onPressed: () => Navigator.pop(context),
             child: Text(
-              'Close',
+              'Fechar',
               style: Theme.of(context).textTheme.bodyMedium,
             ),
           ),

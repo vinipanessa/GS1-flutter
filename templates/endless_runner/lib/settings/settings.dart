@@ -86,6 +86,6 @@ class SettingsController {
       _store.getPlayerName().then((value) => playerName.value = value),
     ]);
 
-    _log.fine(() => 'Loaded settings: $loadedValues');
+    _log.fine(() => 'Configurações carregadas: $loadedValues');
   }
 }

@@ -32,7 +32,7 @@ class SettingsScreen extends StatelessWidget {
                   children: [
                     _gap,
                     const Text(
-                      'Settings',
+                      'Configurações',
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         fontFamily: 'Press Start 2P',
@@ -42,7 +42,7 @@ class SettingsScreen extends StatelessWidget {
                     ),
                     _gap,
                     const _NameChangeLine(
-                      'Name',
+                      'Nome',
                     ),
                     ValueListenableBuilder<bool>(
                       valueListenable: settings.soundsOn,
@@ -55,13 +55,13 @@ class SettingsScreen extends StatelessWidget {
                     ValueListenableBuilder<bool>(
                       valueListenable: settings.musicOn,
                       builder: (context, musicOn, child) => _SettingsLine(
-                        'Music',
+                        'Musica',
                         Icon(musicOn ? Icons.music_note : Icons.music_off),
                         onSelected: () => settings.toggleMusicOn(),
                       ),
                     ),
                     _SettingsLine(
-                      'Reset progress',
+                      'Resetar progresso',
                       const Icon(Icons.delete),
                       onSelected: () {
                         context.read<PlayerProgress>().reset();
@@ -69,7 +69,7 @@ class SettingsScreen extends StatelessWidget {
                         final messenger = ScaffoldMessenger.of(context);
                         messenger.showSnackBar(
                           const SnackBar(
-                              content: Text('Player progress has been reset.')),
+                              content: Text('Progresso foi resetado.')),
                         );
                       },
                     ),
@@ -82,7 +82,7 @@ class SettingsScreen extends StatelessWidget {
               onPressed: () {
                 GoRouter.of(context).pop();
               },
-              child: const Text('Back'),
+              child: const Text('Voltar'),
             ),
             _gap,
           ],

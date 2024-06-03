@@ -20,7 +20,7 @@ class _InstructionsDialogState extends State<InstructionsDialog> {
     return Column(
       children: [
         Text(
-          'Instructions',
+          'Instruções',
           style: TextStyle(
             fontFamily: GoogleFonts.pressStart2p().fontFamily,
             fontSize: 25,
